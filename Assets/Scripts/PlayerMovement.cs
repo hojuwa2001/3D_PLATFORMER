@@ -189,13 +189,13 @@ public class PlayerMovement : MonoBehaviour
         // 만약, 플레이어의 높이가 특정 수치보다 낮으면
         if (transform.position.y <= RespawnHeight)
         {
-            // 현재 위치를 저장된 스폰 포인트로 옮기고
-            transform.position = spawnPoint;
-            // 속력을 초기화한다.
-            rb.linearVelocity = Vector3.zero;
+            Respawn();
         }
     }
 
+    /// <summary>
+    /// 플레이어를 리스폰하는 함수
+    /// </summary>
     public void Respawn()
     {
         // 현재 위치를 저장된 스폰 포인트로 옮기고
