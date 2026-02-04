@@ -1131,7 +1131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9065307295835719710, guid: d5f009c9db876dc4d9ecbe20f27711da, type: 3}
       propertyPath: ExplosionDelay
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9065307295835719710, guid: d5f009c9db876dc4d9ecbe20f27711da, type: 3}
       propertyPath: ExplosionForce
