@@ -20,13 +20,13 @@ public class CheckPoint : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // 충돌한 물체가 플레이어 일때, 동시에 아직 작동하지않은 체크포인트인지 확인
-        if (other.CompareTag("Player") && !isActivated)
+        if(other.CompareTag("Player") && !isActivated)
         {
             // 충돌한 콜라이더에서 PlayerMovement를 가져옴
             PlayerMovement player = other.GetComponent<PlayerMovement>();
 
             // PlayerMovement를 가져올 수 있을때
-            if (player != null)
+            if(player != null)
             {
                 // 스폰포인트 변경 함수를 호출
                 player.SetSpawnPoint(transform.position);
@@ -46,7 +46,7 @@ public class CheckPoint : MonoBehaviour
     private void UpdateMaterial()
     {
         // 작동 여부에 따라서
-        if (isActivated)
+        if(isActivated)
         {
             // 작동한 매테리얼
             meshRenderer.sharedMaterial = CheckTrueMat;

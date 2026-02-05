@@ -97,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
             // 만약, 그라운드 레이어가 감지되면 true, 아니면 false
             isGrounded = Physics.CheckSphere(GroundCheckPos.position, GroundCheckRadius, GroundCheckLayerMask, QueryTriggerInteraction.Ignore);
             // 땅에 붙어있을때는
-            if (isGrounded)
+            if(isGrounded)
             {
                 // 미리정해진 마찰력 적용
                 rb.linearDamping = WalkingDamping;
