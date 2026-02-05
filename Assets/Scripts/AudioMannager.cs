@@ -18,4 +18,10 @@ public class AudioManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
     }
+
+    private void Start()
+    {
+        BGMSource.clip = BGMSound;
+        BGMSource.Play
+    }
 }
